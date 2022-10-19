@@ -64,8 +64,8 @@ class CalculatorServicelmplTest {
 
         assertEquals(Constants.FOR / Constants.TWO, result);
     }
-   // @Test
-   // public void souldTrowDivisionByZeroExceptionDivideByZero(){
-   //  /   assertThrows(DivisionByZeroException.class, () calculatorService.divide(Constants.ONE, Constants.ZERO ));
-   // }
+    @Test
+   public void souldTrowDivisionByZeroExceptionDivideByZero() {
+           assertThrows(DivisionByZeroException.class, () -> calculatorService.divide(Constants.ONE, Constants.ZERO ));
+    }
 }

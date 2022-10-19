@@ -22,7 +22,7 @@ public class CalculatorServicelmpl implements CalculatorService {
     @Override
     public int divide(int a, int b) throws DivisionByZeroException {
       if (b == 0) {
-              throw new DivisionByZeroException();
+              throw new DivisionByZeroException("На ноль делить нельзя");
     }
         return a / b;
     }
